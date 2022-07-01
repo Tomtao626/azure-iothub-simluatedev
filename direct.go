@@ -26,6 +26,7 @@ func DirectMethodFunc(payload map[string]interface{}) (int, map[string]interface
 	//reportedData := map[string]interface{}{
 	//	"control": payload,
 	//}
+	Debug("Json Copy Data", payloadJson)
 	uploadDate := time.Now().AddDate(0, 0, 1).Format("2006-01-02:15:04:05")
 	msgArrayData, err := setDataUploadStu(macConfData.Mac, uploadDate, payload)
 	if err != nil {
@@ -33,6 +34,7 @@ func DirectMethodFunc(payload map[string]interface{}) (int, map[string]interface
 	}
 	fmt.Println("UploadData----Before", string(msgArrayData))
 	writeChan <- msgArrayData
+	writeJsonFile(payloadJson)
 	return SuccessStatusCode, map[string]interface{}{"result": payload}, nil
 }
 
