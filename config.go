@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"toml"
+	"github.com/BurntSushi/toml"
 )
 
 const serviceName = "simluatedev"
