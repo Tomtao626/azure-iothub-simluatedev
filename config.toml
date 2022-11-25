@@ -1,21 +1,21 @@
 # DPS provisioning with symmetric key
 [DeviceProvisioning]
 Method = "symmetric_key"
-IdScope = "0cn000656B6"
-OrderId = "ce190381-3dwef-4d0jc-94h4e-ba7gdfb6c4a161d"
+IdScope = "0cn0030BD6256B6"
+OrderId = "ce19024381-3d234wef-4d0jc234-94h24e-ba7g42dfb6c4a161d"
 PolicyName = "registration"
 DevEndPoint = "global.azure-devices-provisioning.cn"
 RegBaseUrl = "%s/%s/registrations/%s/register?api-version=2021-06-01"
 RegStatusBaseUrl = "%s/%s/registrations/%s?api-version=2021-06-01"
 
 [CommonKeys]
-PrimaryKey = "3k/K7JPeXrG+abUKsdglDkJbBqaB1D1PO74G/AqY4daC2hXMvdAl1nW2sfYfr7UGNvba2HRNhlUi9egqUbj6Hgbc1dg=="
-SecondaryKey = "SU3hAUJtnchjaz/DsdfHhyChbIUKdQq4nEFBPwEz5bg9sgm8byA6BzTso0sfGaKeLasJEBnRe1KnInYrooCgfkGKxg=="
-RegistrationId = "20220623device07" #设备mac
+PrimaryKey = "3k/K7JPeXrG+abUKsdglDkJbB56qaB1D1PO74G/AqY4da56C2hXMvdAl1nW2sfYfr7UGNvba562HRNhlUi9egqUbj6Hgbc1dg=="
+SecondaryKey = "SU3hAUJtn5chjaz/DsdfHhyChbIUKdQq54nEFBPwEz5bg9sgm8byA56BzTso0sfGaKeLasJEBnRe1KnInYrooCgfkGKxg=="
+RegistrationId = "202200000device626" #设备mac
 
 [DataUploadConf]
-IdentityId = "0a527086c5gdfdb1d8b7a76cdfg5137020f801"
-Pid = "0000000000000000000000001ecdgc0000"
+IdentityId = "0a5270865c5gdfdb1d56eqw8b7a76cdfg51370520f85601"
+Pid = "010000000000000000000000001ecddadfdgc0001"
 MsgType = "dataUpload"
 FirmwareVersion = "1.0"
 TimeVal = 300 # 周期上报数据 默认300秒(1分钟)
